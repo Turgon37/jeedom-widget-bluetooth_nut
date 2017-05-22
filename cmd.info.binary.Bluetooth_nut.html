@@ -1,0 +1,24 @@
+<div style="padding:0;width:157px;min-height:115px;" class="cmd #history# tooltips cmd-widget container-fluid" data-type="info" data-subtype="binary" data-cmd_id="#id#" data-cmd_uid="#uid#" title="#collectDate#">
+	<div class="row">
+		<div class="center-block col-xs-12 h5 cmdName" id="cmdName#id#" style="margin-top:0;"><strong>#valueName#</strong></div>
+		<div class="center-block col-xs-12 iconCmd#uid#"></div>
+	</div>
+<!-- Ne Pas Supprimer -->
+	<script class="createWidgetInfo" type="text/javascript">//<![CDATA[{"type":"1","version":"1","image1":"nut_deactivated_100x100.png","image2":"nut_activated_100x100.png"}]]></script>
+<!-- Ne Pas Supprimer -->
+	<script>
+		if ("#displayName#" == "1") {
+			$(".cmd[data-cmd_uid=#uid#] .cmdName").show();
+			$(".cmd[data-cmd_uid=#uid#]").css("min-height", "135px");
+		} else {
+			$(".cmd[data-cmd_uid=#uid#] .cmdName").hide();
+			$(".cmd[data-cmd_uid=#uid#]").css("min-height", "115px");
+		}
+		$(".iconCmd#uid#").empty();
+		if ("#state#" == "1") {
+			$(".iconCmd#uid#").append("<img src='plugins/widget/core/images/nut_activated_100x100.png'>");
+		} else {
+			$(".iconCmd#uid#").append("<img src='plugins/widget/core/images/nut_deactivated_100x100.png'>");
+		}
+	</script>
+</div>
